@@ -1,0 +1,48 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+    th{ 
+        color:#fff;
+            }
+</style>
+
+<div class="row">
+    <div class="col">
+        <div class="card card-body">
+
+            <input id="search-input" class="form-control" type="text">
+
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <tr  class="bg-info">
+        <th data-column="Name" data-order="desc">Name &#9650</th>
+        <th data-column="FavoriteFridge2" data-order="desc">FavoriteFridge2 &#9650</th>
+    </tr>
+
+    <tbody id="myTable">
+        
+    </tbody>
+</table>
+
+<script src="index.js"></script>
+<script>
+
+  function test(){
+    let d=new Date();
+    
+    if(d.getDay()==1&& d.getHours()+1 >=8 && d.getMinutes()+1 >=35){
+      buildTable()
+    }else{
+      //rest of the script
+      dlg
+    }
+  }
+    
+    test()
+    
+    </script>
