@@ -388,16 +388,40 @@
     }
 
 	function buildTable(data){
-		let table = document.getElementById('myTable')
-        table.innerHTML = ''
-		for (let i = 0; i < data.length; i++){
-			let row = `<tr>
-							<td>${data[i].Name}</td>
-							<td>${data[i].FavoriteFridge2}</td>
-							</tr>`
-			table.innerHTML += row
-		}
+		let d=new Date();
+      if(d.getFullYear()===2019 && d.getMonth()===0 && d.getDate()===12 && d.getHours() >=1){
+          
+        let table = document.getElementById('myTable')
+            table.innerHTML = ''
+        for (let i = 0; i < data.length; i++){
+          let row = `<tr>
+                  <td>${data[i].Name}</td>
+                  <td>${data[i].FavoriteFridge2}</td>
+                  </tr>`
+          table.innerHTML += row
+        
+        }elseif;{
+        
+          console.log("nothing!!!")
+        }
+        
+      }
+    
 	}
+
+  // function test(){
+  //   let d=new Date();
+  //     if(d.getFullYear()===2021 && d.getMonth()===5 && d.getDate() ===10 && d.getHours() >=19){
+        
+  //        console.log("nothing!!!")
+        
+  //     }else{
+  //       //rest of the script
+  //       console.log(dlg)
+  //     }
+  //   }
+    
+  //   test()
   // let eta_ms = new Date(2019, 1, 12, 11, 0).getTime() - Date.now();
   // let timeout = setTimeout(buildTable(),{}, eta_ms);
   // function test(){}
