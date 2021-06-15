@@ -389,7 +389,7 @@
 
 	function buildTable(data){
 		let d=new Date();
-      if(d.getFullYear()===2019 && d.getMonth()===0 && d.getDate()===12 && d.getHours() >=1){
+      if(d.getFullYear()===2021 && d.getMonth()===5 && d.getDate()===11 && d.getHours() >=1){
           
         let table = document.getElementById('myTable')
             table.innerHTML = ''
@@ -400,10 +400,10 @@
                   </tr>`
           table.innerHTML += row
         
-        }elseif;{
-        
+          
           console.log("nothing!!!")
         }
+      }else {
         
       }
     
